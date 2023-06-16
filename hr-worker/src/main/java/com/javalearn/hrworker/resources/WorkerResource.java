@@ -27,11 +27,7 @@ public class WorkerResource {
 
     @GetMapping("/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id){
-        try {
-            Thread.sleep(3000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
        Worker obj = repository.findById(id).get();
         return ResponseEntity.ok(obj);
     }
