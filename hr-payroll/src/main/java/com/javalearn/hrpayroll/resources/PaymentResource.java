@@ -2,6 +2,7 @@ package com.javalearn.hrpayroll.resources;
 
 import com.javalearn.hrpayroll.entities.Payment;
 import com.javalearn.hrpayroll.service.PaymentService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
